@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy New Year Akka</title>
+
+<style>
+    body {
+        margin: 0;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+    }
+
+    .card {
+        background: #fff;
+        width: 90%;
+        max-width: 320px;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        text-align: center;
+        animation: fadeIn 2s;
+    }
+
+    .slideshow {
+        position: relative;
+        width: 100%;
+    }
+
+    .slide {
+        width: 100%;
+        height: 360px;
+        object-fit: cover;
+        border-radius: 15px;
+        display: none;
+    }
+
+    .slide.active {
+        display: block;
+    }
+
+    h1 {
+        color: #e91e63;
+        margin: 15px 0 10px;
+    }
+
+    p {
+        font-size: 15px;
+        color: #444;
+    }
+
+    h2 {
+        margin-top: 10px;
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0; transform: scale(0.9);}
+        to {opacity: 1; transform: scale(1);}
+    }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <!-- SLIDESHOW -->
+    <div class="slideshow">
+        <img src="IMG-20251017-WA0001.jpg" class="slide active">
+        <img src="IMG_20250518_215948_428.jpg" class="slide">
+        <img src="1736849768046.jpg" class="slide">
+    </div>
+
+    <h1>🎉 Happy New Year Akka 🎉</h1>
+
+    <p>
+        Dear Akka 🤍<br><br>
+        This New Year brings you happiness,  
+        health, success, and endless smiles 💖<br><br>
+        Thank you for always being my strength ❤️
+    </p>
+
+    <h2>✨ 2025 ✨</h2>
+
+</div>
+
+<script>
+    let slides = document.querySelectorAll(".slide");
+    let index = 0;
+
+    setInterval(() => {
+        slides[index].classList.remove("active");
+        index = (index + 1) % slides.length;
+        slides[index].classList.add("active");
+    }, 2500);
+</script>
+
+</body>
+</html>
