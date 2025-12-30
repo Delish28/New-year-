@@ -105,7 +105,7 @@ h2 {
 </div>
 
 <script>
-let photos = ["photo1.jpg", "photo2.jpg", "photo3.jpg"];
+let photos = ["IMG_2025518_21594.jpg", "IMG_20251017-WA0001.jpg", "1736849768046.jpg"];
 let index = 0;
 
 function changePhoto() {
