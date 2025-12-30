@@ -88,8 +88,8 @@ h2 {
     <!-- CLICKABLE IMAGE -->
     <div class="photo-box" onclick="changePhoto()">
         <img id="photo" src=" 1736849768046.jpg" alt="Akka">
-        <img id="photo" src="IMG_20251017-WA0001.jpg alt="Akka"
-        <img id="photo" src="IMG_2025518_21594.jpg alt="Akka"
+        <img id="photo" src="IMG_20251017-WA0001.jpg" alt="Akka"
+        <img id="photo" src="IMG_2025518_21594.jpg"alt="Akka"
     </div>
     <div class="tap">👆 Tap / Click photo</div>
 
